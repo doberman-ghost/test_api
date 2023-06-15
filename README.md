@@ -25,3 +25,19 @@
 - Python 3.9.10
 - pytest 7.3.2
 - requests 2.31.0
+
+
+
+**Для запуска теста в контейнере:**
+
+Клонируйте репозиторий и перейдите к нему в командной строке:
+
+    git clone git@github.com:doberman-ghost/test_api.git
+
+    cd test_api
+Собрать образ проекта:
+
+    docker build -t test_api .
+Запустить контейнер:
+
+    docker run --name test_api_container --rm test_api
