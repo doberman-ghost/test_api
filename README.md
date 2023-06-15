@@ -9,7 +9,7 @@
     cd test_api
 Создайте и активируйте venv:
 
-    python -m venv env
+    python -m venv venv
     source venv/Scripts/activate
 Установите зависимости из файла requirements.txt:
 
@@ -24,3 +24,4 @@
 **Технологии:**
 - Python 3.9.10
 - pytest 7.3.2
+- requests 2.31.0
