@@ -3,7 +3,6 @@ import pytest
 from random import randint
 
 BASE_URL = "https://jsonplaceholder.typicode.com"
-RANDOM_ID_POST = randint(1, 100)
 PATH = "/posts"
 
 
@@ -31,7 +30,7 @@ def test_get_posts(header, value):
         ]
 )
 def test_get_post_id(post_keys, name_str, type_str):
-    response = requests.get(BASE_URL+PATH+f"/{RANDOM_ID_POST}")
+    response = requests.get(BASE_URL+PATH+f"/{randint(1, 100)}")
 
     assert response.status_code == 200
     response_json = response.json()
